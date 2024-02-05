@@ -31,7 +31,7 @@ header {
 }
 
 .search-bar input {
-  padding: 10px;
+  padding: 8px; /* Adjusted padding to make the input smaller */
   border-radius: 35px;
   width: 100%;
   border: 2px solid #0078a5;
@@ -54,10 +54,23 @@ header {
   margin-right: 10px;
   padding-right: 8%;
   display: flex;
+  justify-content: space-between;
 }
 
 .icons i {
   font-size: 15px;
   margin-left: 10px;
   color: black;
+}
+hr {
+  display: flex;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-top: 3px;
+}
+.nav-bar {
+  display: flex;
+  margin-top: 1px;
+  align-items: center;
+  
 }
