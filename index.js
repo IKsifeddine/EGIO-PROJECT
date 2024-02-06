@@ -151,3 +151,57 @@ function populateCardsAndConseils() {
 }
 
 window.onload = populateCardsAndConseils;
+
+// ...
+
+// contact-section
+function createContactCard(type, content) {
+  const card = document.createElement("div");
+  card.className = "card";
+
+  const image = document.createElement("img");
+  image.src = content.image;
+  image.alt = "Card Image";
+  image.style.width = "100%";
+
+  if (type === "image") {
+    card.appendChild(image);
+  } else if (type === "full") {
+    const title = document.createElement("h3");
+    title.textContent = content.title;
+
+    const description = document.createElement("p");
+    description.textContent = content.description;
+
+    const input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = "Votre adresse email";
+
+    card.appendChild(image);
+    card.appendChild(title);
+    card.appendChild(description);
+    card.classList.add("card-with-input");
+    card.appendChild(input);
+  }
+
+  return card;
+}
+
+const contactCardsContainer = document.getElementById("cardsContainer");
+
+const contactCard1Content = {
+  image: "assets/1.png",
+};
+
+const contactCard2Content = {
+  image: "assets/2.png",
+  title: "Restons en contact",
+  description:
+    "Inscrivez-vous à nos communications et bénéficiez de contenus exclusifs, du programme fidélité et d’offres personnalisées. Pas plus d’un email, par semaine.",
+};
+
+const contactCard1 = createContactCard("image", contactCard1Content);
+const contactCard2 = createContactCard("full", contactCard2Content);
+
+contactCardsContainer.appendChild(contactCard1);
+contactCardsContainer.appendChild(contactCard2);
