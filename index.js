@@ -162,11 +162,13 @@ function createContactCard(type, content) {
   const image = document.createElement("img");
   image.src = content.image;
   image.alt = "Card Image";
-  image.style.width = "100%";
 
   if (type === "image") {
     card.appendChild(image);
   } else if (type === "full") {
+    const overlay = document.createElement("div");
+    overlay.className = "content-overlay";
+
     const title = document.createElement("h3");
     title.textContent = content.title;
 
@@ -177,11 +179,17 @@ function createContactCard(type, content) {
     input.type = "text";
     input.placeholder = "Votre adresse email";
 
+    const button = document.createElement("button");
+    button.textContent = "je m'inscris";
+
+    overlay.appendChild(title);
+    overlay.appendChild(description);
+    overlay.appendChild(input);
+    overlay.appendChild(button);
+
     card.appendChild(image);
-    card.appendChild(title);
-    card.appendChild(description);
+    card.appendChild(overlay);
     card.classList.add("card-with-input");
-    card.appendChild(input);
   }
 
   return card;

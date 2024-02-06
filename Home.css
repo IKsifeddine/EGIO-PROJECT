@@ -277,7 +277,6 @@ hr {
 }
 
 /* contact-section */
-
 .contact-section {
   text-align: center;
   margin: 40px;
@@ -287,20 +286,22 @@ hr {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  
 }
 
 .card {
+  position: relative;
   width: 45%;
   padding: 0;
   box-sizing: border-box;
   margin-bottom: 10px;
   border: none;
+  overflow: hidden; /* Ensure the image doesn't overflow the card */
 }
 
 .card img {
   width: 100%;
   border: none;
+  height: auto;
 }
 
 .card-with-input {
@@ -324,12 +325,33 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.8);
 }
 
 .card-with-input h3,
-.card-with-input p,
+.card-with-input p {
+  margin: 40px 10; /* Adjusted margin for title and description */
+  z-index: 1;
+  color: #fff;
+}
+
 .card-with-input input {
-  margin: 10px;
-  z-index: 1; /* Ensure content is above the overlay */
+  margin: 10px 0; /* Adjusted margin for input */
+  z-index: 1;
+  color: #fff;
+  outline: none;
+  border: 1px solid #fff; /* Set border color to white */
+  padding: 15px;
+  background-color: transparent;
+}
+
+.card-with-input button {
+  margin: auto;
+  padding: 10px;
+  background-color: #3AC9FF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  margin: 20px;
 }
