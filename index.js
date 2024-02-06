@@ -58,7 +58,6 @@ const products = [
     price: "$29.99",
     description: "Nicorette 500 mg Menthe Existe en plusieurs modèles",
   },
-  
 ];
 
 /* conseils   section  */

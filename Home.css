@@ -109,7 +109,7 @@ hr {
   box-shadow: #707070;
 }
 .overlay p {
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 .overlay button {
@@ -204,10 +204,9 @@ hr {
   color: #f98d00;
 }
 
-
 /* conseils   section  */
 
-.conseils-section{
+.conseils-section {
   text-align: center;
   margin: 20px;
 }
@@ -215,6 +214,7 @@ hr {
 .conseils-section {
   text-align: center;
   margin: 20px;
+  position: relative;
 }
 
 .conseils-card-container {
@@ -224,7 +224,8 @@ hr {
 }
 
 .conseil-card {
-  width: calc(33.33% - 20px); 
+  position: relative;
+  width: calc(33.33% - 20px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -237,16 +238,40 @@ hr {
 }
 
 .conseil-content {
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   padding: 10px;
+  width: 80%;
+  z-index: 2;
 }
 
 .conseil-content h4 {
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: #333;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .conseil-content p {
+  margin: 0;
   font-size: 14px;
-  color: #666;
+  color: #fff;
+}
+
+.conseil-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 120, 165, 0.6) 0%,
+    rgba(0, 120, 165, 0) 100%
+  );
+  z-index: 1;
 }
