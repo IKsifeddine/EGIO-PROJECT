@@ -31,7 +31,7 @@ header {
 }
 
 .search-bar input {
-  padding: 8px; /* Adjusted padding to make the input smaller */
+  padding: 8px;
   border-radius: 35px;
   width: 100%;
   border: 2px solid #0078a5;
@@ -72,5 +72,92 @@ hr {
   display: flex;
   margin-top: 1px;
   align-items: center;
-  
+}
+.home-page {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.home-page .slider-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.home-decription {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+  max-width: 70%;
+  padding: 40px;
+  padding-right: 29%;
+}
+
+.overlay h2,
+.overlay p,
+.overlay button {
+  margin: 1;
+}
+.overlay h2 {
+  box-shadow: #707070;
+}
+.overlay p {
+  font-size: 14px; /* Adjust the font size for <p> */
+}
+
+.overlay button {
+  background: #707070;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 30px;
+  padding-left: 30px;
+  outline: none;
+}
+
+
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.slider-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
 }
