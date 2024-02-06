@@ -295,7 +295,7 @@ hr {
   box-sizing: border-box;
   margin-bottom: 10px;
   border: none;
-  overflow: hidden; /* Ensure the image doesn't overflow the card */
+  overflow: hidden;
 }
 
 .card img {
@@ -347,11 +347,63 @@ hr {
 .card-with-input button {
   margin: auto;
   padding: 10px;
-  background-color: #3AC9FF;
+  background-color: #3ac9ff;
   color: #fff;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   outline: none;
   margin: 20px;
+}
+
+/* partenaires-section */
+.partenaires-section {
+  text-align: center;
+  margin: 40px;
+}
+
+.partenaires-section h3 {
+  text-align: center;
+}
+.partners-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.partner-card {
+  position: relative;
+  width: 25%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.partner-card img {
+  width: 100%;
+  height: auto;
+  border: none;
+  display: block;
+}
+
+.partners-container .button-container {
+  text-align: center;
+}
+
+.partners-container .button-container button {
+  background-color: #0078a5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  width: 80px;
+}
+
+.partners-container .button-container button:hover {
+  background-color: #0078a5;
 }

@@ -213,3 +213,39 @@ const contactCard2 = createContactCard("full", contactCard2Content);
 
 contactCardsContainer.appendChild(contactCard1);
 contactCardsContainer.appendChild(contactCard2);
+
+// partenaires-section
+const partnersSection = document.getElementById("partnersSection");
+const partnersContainer = document.getElementById("partnersContainer");
+
+
+const imagePaths = [
+  "assets/partenaires1.png",
+  "assets/partenaires2.png",
+  "assets/partenaires3.png",
+  "assets/partenaires4.png",
+];
+
+
+imagePaths.forEach((imagePath) => {
+  const card = document.createElement("div");
+  card.className = "partner-card";
+
+  const img = document.createElement("img");
+  img.src = imagePath;
+  img.alt = "Partner Image";
+
+  card.appendChild(img);
+  partnersContainer.appendChild(card);
+});
+
+const buttonContainer = document.createElement("div");
+buttonContainer.className = "button-container";
+
+const button = document.createElement("button");
+button.textContent = "Voir toutes nos marques";
+
+buttonContainer.appendChild(button);
+partnersContainer.appendChild(buttonContainer);
+
+partnersSection.appendChild(partnersContainer);
