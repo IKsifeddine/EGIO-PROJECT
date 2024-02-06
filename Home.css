@@ -357,21 +357,18 @@ hr {
 }
 
 /* partenaires-section */
-.partenaires-section {
-  text-align: center;
-  margin: 40px;
-}
-
-.partenaires-section h3 {
+.partenaires-section{
   text-align: center;
 }
 .partners-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
   width: 50%;
   margin: auto;
   margin-top: 30px;
+ 
 }
 
 .partner-card {
@@ -390,20 +387,26 @@ hr {
   display: block;
 }
 
-.partners-container .button-container {
+.button-container {
+  width: 100%; /* Take up the full width */
   text-align: center;
 }
 
-.partners-container .button-container button {
+.button-container button {
+  margin-top: 10px;
+  padding: 2%;
   background-color: #0078a5;
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 140px;
   outline: none;
   width: 80px;
+  width: fit-content;
+  
+  
 }
 
-.partners-container .button-container button:hover {
-  background-color: #0078a5;
+.button-container button:hover {
+  background-color: #005678; 
 }
