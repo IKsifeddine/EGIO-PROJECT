@@ -1,3 +1,4 @@
+// Sample data for slider images
 const images = [
   "assets/pharmacist-checking-medicines-drugstore.png",
   "assets/pharmacist-checking-medicines-drugstore.png",
@@ -30,32 +31,55 @@ function prevSlide() {
 showSlide();
 setInterval(nextSlide, 3000);
 
-// JavaScript
+// Sample data for products
 const products = [
   {
     imgSrc: "assets/product.png",
     price: "$29.99",
-    description: "Nicorette 500 mg Menthe Existe en plusieurs modéles",
+    description: "Nicorette 500 mg Menthe Existe en plusieurs modèles",
   },
   {
     imgSrc: "assets/product.png",
     price: "$29.99",
-    description: "Nicorette 500 mg Menthe Existe en plusieurs modéles",
+    description: "Nicorette 500 mg Menthe Existe en plusieurs modèles",
   },
   {
     imgSrc: "assets/product.png",
     price: "$29.99",
-    description: "Nicorette 500 mg Menthe Existe en plusieurs modéles",
+    description: "Nicorette 500 mg Menthe Existe en plusieurs modèles",
   },
   {
     imgSrc: "assets/product.png",
     price: "$29.99",
-    description: "Nicorette 500 mg Menthe Existe en plusieurs modéles",
+    description: "Nicorette 500 mg Menthe Existe en plusieurs modèles",
   },
   {
     imgSrc: "assets/product.png",
     price: "$29.99",
-    description: "Nicorette 500 mg Menthe Existe en plusieurs modéles",
+    description: "Nicorette 500 mg Menthe Existe en plusieurs modèles",
+  },
+  
+];
+
+/* conseils   section  */
+const conseils = [
+  {
+    imgSrc: "assets/conseils1.png",
+    title: "Votre solution sant",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ",
+  },
+  {
+    imgSrc: "assets/conseils2.png",
+    title: "Votre solution sant",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ",
+  },
+  {
+    imgSrc: "assets/conseils3.png",
+    title: "Votre solution sant",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ",
   },
 ];
 
@@ -87,41 +111,6 @@ function createCard(product) {
   return card;
 }
 
-function populateCards() {
-  const cardList = document.getElementById("cardList");
-
-  products.forEach((product) => {
-    const card = createCard(product);
-    cardList.appendChild(card);
-  });
-}
-
-window.onload = populateCards;
-
-/* conseils   section  */
-
-
-const conseils = [
-  {
-    imgSrc: "assets/conseils1.png",
-    title: "Votre solution sant",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ",
-  },
-  {
-    imgSrc: "assets/conseils2.png",
-    title: "Votre solution sant",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ",
-  },
-  {
-    imgSrc: "assets/conseils3.png",
-    title: "Votre solution sant",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ",
-  },
-];
-
 function createConseilCard(conseil) {
   const card = document.createElement("div");
   card.classList.add("conseil-card");
@@ -147,13 +136,19 @@ function createConseilCard(conseil) {
   return card;
 }
 
-function populateConseilCards() {
-  const cardContainer = document.getElementById("conseilsCardContainer");
+function populateCardsAndConseils() {
+  const productCardList = document.getElementById("cardList");
+  const conseilCardContainer = document.getElementById("conseilsCardContainer");
+
+  products.forEach((product) => {
+    const card = createCard(product);
+    productCardList.appendChild(card);
+  });
 
   conseils.forEach((conseil) => {
     const card = createConseilCard(conseil);
-    cardContainer.appendChild(card);
+    conseilCardContainer.appendChild(card);
   });
 }
 
-window.onload = populateConseilCards;
+window.onload = populateCardsAndConseils;
