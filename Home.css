@@ -109,7 +109,7 @@ hr {
   box-shadow: #707070;
 }
 .overlay p {
-  font-size: 14px; /* Adjust the font size for <p> */
+  font-size: 14px; 
 }
 
 .overlay button {
@@ -202,4 +202,51 @@ hr {
   font-size: 16px;
   font-weight: bold;
   color: #f98d00;
+}
+
+
+/* conseils   section  */
+
+.conseils-section{
+  text-align: center;
+  margin: 20px;
+}
+
+.conseils-section {
+  text-align: center;
+  margin: 20px;
+}
+
+.conseils-card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.conseil-card {
+  width: calc(33.33% - 20px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-right: 20px;
+}
+
+.conseil-card img {
+  width: 100%;
+  height: auto;
+}
+
+.conseil-content {
+  padding: 10px;
+}
+
+.conseil-content h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.conseil-content p {
+  font-size: 14px;
+  color: #666;
 }
