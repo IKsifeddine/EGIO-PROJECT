@@ -538,3 +538,49 @@ hr {
   background-color: #00567a;
   color: #fff;
 }
+
+.footer-section {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  background-color: #0078A5;
+  color: #fff;
+  padding: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-special {
+  flex-basis: 100%; 
+  text-align: center;
+}
+
+.footer-special img {
+  width: 50%; 
+  max-width: 200px; 
+  display: block; 
+  margin: 20px auto; 
+}
+
+.footer-special hr {
+  margin: 10px 0; 
+}
+
+.footer-special h5 {
+  font-size: 14px;
+  text-align: center;
+}
