@@ -410,3 +410,44 @@ hr {
 .button-container button:hover {
   background-color: #005678; 
 }
+
+
+/* learn-section */
+.learn-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Divide into two columns */
+  gap: 10px; /* Reduce the spacing between elements */
+  margin: 40px;
+}
+
+.content-left {
+  display: flex; /* Use flexbox for the content left */
+  flex-direction: column; /* Stack child elements vertically */
+}
+
+.content-left h3 {
+  font-size: 25px; /* Adjust font size for headers */
+  color: #0078A5;
+  font-weight: bold; /* Use 'bold' for font-weight */
+}
+
+.content-left hr {
+  margin-top: 5px; /* Adjust margin-top as needed */
+  border: 0; /* Remove default border styles */
+  border-top: 1px solid #0078A5; /* Add a custom border-top style */
+}
+
+.content-left p {
+  font-size: 12px; /* Adjust font size for paragraphs */
+}
+
+.image-right img {
+  width: 80%; /* Make the image take the entire width of its container */
+  height: 90%; /* Maintain the aspect ratio of the image */
+  border: none;
+  outline: none;
+}
+
+
+
+
