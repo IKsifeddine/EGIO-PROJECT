@@ -486,3 +486,55 @@ hr {
   color: #666;
   margin-bottom: 0;
 }
+
+/* contact-nous-section  */
+
+.contact-nous {
+  position: relative;
+  overflow: hidden;
+  padding: 0%;
+  margin: 0;
+}
+
+.contact-nous .images-container {
+  display: flex;
+}
+
+.contact-nous .images-container img {
+  width: 15%;
+  height: 100%;
+  max-width: 50%;
+  margin-left: 300px;
+}
+
+.contact-nous .overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #0078a5;
+}
+
+.contact-nous .overlay-content h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0078a5;
+}
+
+.contact-nous .overlay-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffff;
+  color: #0078a5;
+  border: solid 1px #005678;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 40px;
+  outline: none;
+}
+
+.contact-nous .overlay-content button:hover {
+  background-color: #00567a;
+  color: #fff;
+}
