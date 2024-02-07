@@ -218,14 +218,12 @@ contactCardsContainer.appendChild(contactCard2);
 const partnersSection = document.getElementById("partnersSection");
 const partnersContainer = document.getElementById("partnersContainer");
 
-
 const imagePaths = [
   "assets/partenaires1.png",
   "assets/partenaires2.png",
   "assets/partenaires3.png",
   "assets/partenaires4.png",
 ];
-
 
 imagePaths.forEach((imagePath) => {
   const card = document.createElement("div");
@@ -249,3 +247,57 @@ buttonContainer.appendChild(button);
 partnersContainer.appendChild(buttonContainer);
 
 partnersSection.appendChild(partnersContainer);
+
+// aventage-section
+const rowsData = [
+  {
+    logo: "assets/aventage1.png",
+    title: "Livraison gratuite",
+    description:
+      "Livraison express gratuite à domicile ou en point relais avec le Pass Livraison",
+  },
+  {
+    logo: "assets/aventage2.png",
+    title: "Retour gratuit",
+    description:
+      "Retournez et échangez sans frais pendant 30 jours avec le Pass Livraison",
+  },
+  {
+    logo: "assets/aventage3.png",
+    title: "Produits contrôlés",
+    description: "Vous passez commande auprès de pharmacies françaises",
+  },
+  {
+    logo: "assets/aventage4.png",
+    title: "Achats 100% sécurisés",
+    description:
+      "Le plus haut niveau de sécurité pour vos achats santé en ligne",
+  },
+];
+
+function createRows(container, data) {
+  data.forEach((rowData) => {
+    const row = document.createElement("div");
+    row.classList.add("row");
+
+    const logo = document.createElement("img");
+    logo.src = rowData.logo;
+    logo.alt = "Logo";
+
+    const title = document.createElement("h4");
+    title.textContent = rowData.title;
+
+    const description = document.createElement("p");
+    description.textContent = rowData.description;
+
+    row.appendChild(logo);
+    row.appendChild(title);
+    row.appendChild(description);
+
+    container.appendChild(row);
+  });
+}
+
+const aventageContainer = document.getElementById("aventageContainer");
+
+createRows(aventageContainer, rowsData);

@@ -357,7 +357,7 @@ hr {
 }
 
 /* partenaires-section */
-.partenaires-section{
+.partenaires-section {
   text-align: center;
 }
 .partners-container {
@@ -368,7 +368,6 @@ hr {
   width: 50%;
   margin: auto;
   margin-top: 30px;
- 
 }
 
 .partner-card {
@@ -403,51 +402,87 @@ hr {
   outline: none;
   width: 80px;
   width: fit-content;
-  
-  
 }
 
 .button-container button:hover {
-  background-color: #005678; 
+  background-color: #005678;
 }
-
 
 /* learn-section */
 .learn-section {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide into two columns */
-  gap: 10px; /* Reduce the spacing between elements */
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
   margin: 40px;
 }
 
 .content-left {
-  display: flex; /* Use flexbox for the content left */
-  flex-direction: column; /* Stack child elements vertically */
+  display: flex;
+  flex-direction: column;
 }
 
 .content-left h3 {
-  font-size: 25px; /* Adjust font size for headers */
-  color: #0078A5;
-  font-weight: bold; /* Use 'bold' for font-weight */
+  font-size: 25px;
+  color: #0078a5;
+  font-weight: bold;
 }
 
 .content-left hr {
-  margin-top: 5px; /* Adjust margin-top as needed */
-  border: 0; /* Remove default border styles */
-  border-top: 1px solid #0078A5; /* Add a custom border-top style */
+  margin-top: 5px;
+  border: 0;
+  border-top: 1px solid #0078a5;
 }
 
 .content-left p {
-  font-size: 12px; /* Adjust font size for paragraphs */
+  font-size: 12px;
 }
 
 .image-right img {
-  width: 80%; /* Make the image take the entire width of its container */
-  height: 90%; /* Maintain the aspect ratio of the image */
+  width: 80%;
+  height: 90%;
   border: none;
   outline: none;
 }
+/* aventage-section */
+.aventage {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+.aventage-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+}
 
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
 
+.row img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 10px;
+}
 
+.row h4 {
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 5px;
+}
 
+.row p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 0;
+}
